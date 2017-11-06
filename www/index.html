@@ -1,0 +1,428 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+		<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:500" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+	  <link href="open-iconic-master/font/css/open-iconic.css" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+	  <style>
+		body {
+		  display: flex;
+		  min-height: 100vh;
+		  flex-direction: column;
+		  font-family: 'Hind Madurai', 'Roboto', sans-serif;
+		}
+	  main {
+      flex: 1 0 auto;
+    }
+	
+	input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid #cfd8dc;
+			border-radius: 0;
+			outline: none;
+			height: 3rem;
+			width: 100%;
+			font-size: 1rem;
+			margin: 0 0 20px 0;
+			padding: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			-webkit-box-sizing: content-box;
+			box-sizing: content-box;
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+		
+	input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+		border-bottom: 2px solid #2196f3;
+		-webkit-box-shadow: 0 1px 0 0 #2196f3;
+		box-shadow: 0 1px 0 0 #2196f3;
+	}
+	
+	input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+			color: #2196f3;
+		}
+		
+		
+	.card-panel {
+		border-radius: 10px;
+		
+	}
+	.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+	p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+	.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    margin-right: -1px;
+}
+	.card .card-content {
+    padding: 16px 16px 8px 16px;
+}
+	.card .card-action {
+    padding: 16px 16px;
+	border-top: 1px solid rgba(245, 245, 245, 0.3);
+}
+	.row .col {
+    padding: 0 .75rem;
+}
+	i.left {
+		float: left;
+		margin-right: 8px;
+}
+	blockquote {
+    margin: 8px 0;
+    border-left: 5px solid #2196F3;
+}
+	nav .brand-logo {
+	margin-left:16px;
+}
+	.px40
+	{
+		width:40px;
+		height:40px;
+	}
+	.mb0{
+	margin-bottom:0px;
+	}
+	.mr0{
+	margin-right: 0px;
+	}
+	
+	.divider {
+    background-color: #f5f5f5;
+}
+
+.card {
+   
+    margin: .5rem 0 0rem 0;
+    border-radius: 5px;
+}
+
+	</style>
+	
+    </head>
+	
+	
+
+    <body class=" grey lighten-2">
+	
+	<div class="navbar-fixed">
+		<nav class="blue z-depth-0">
+			<div class="nav-wrapper blue z-depth-0">
+			  <a href="#!" class="brand-logo white-text left"><i class="material-icons large ">menu</i></a>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="">
+	
+		<!-- Message Card Public Post -->
+		<div class="row">
+			<div class="col s12 m12">
+			<div class="card white z-depth-0 waves-effect waves-light ">
+				<div class="card-content blue-grey-text text-darken-2">
+				  
+				  <div class="row">
+	
+						<p class="flow-text"> This is a normal public post. எண்ணிடலங்கா துகள்கள் எனது வேகத்தைக் குறைத்தன. பெரிய உயரமானவனாக தோன்ற வேண்டுமென்ற எனது நோக்கத்தால், நான் என்னை சுதாரித்துக்கொண்டேன்; அதைச் சொல்லியே ஆக வேண்டும். காரணம் எட்டு அடி உயரம் அது. அளவிலும் மிகப் பெரியது. இந்தத் தீர்மானத்திற்குப் பிறகு, எனது மெட்டீரியல்களை
+						வெற்றிகரமாகச் சேமித்து, அடுக்குவதில் சில மாதங்களைச் செலவிட்டேன், நான் தயார்.</p>
+					
+				  </div>
+				  
+				  
+				  <div class="row">
+				  
+					<div class="col">
+					  <img src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t1.0-1/p32x32/22814476_1440891822684373_7681172927818575830_n.jpg?oh=5fd0cbd42493591d249cfca392d40e4b&oe=5A74415A" alt="" class="circle responsive-img left px40"> <!-- notice the "circle" class -->
+					</div>
+					<div class="col">
+					  <span class="row blue-text">
+						paulwinjerome
+					  </span>
+					  <span class="row grey-text">
+						tuesday
+					  </span>
+					
+					</div>
+					<div class="col right">
+					  
+					  <a class="dropdown-button waves-effect waves-light white grey-text z-depth-0" data-activates="dropdown1" ><i class="material-icons small right">keyboard_arrow_up</i></a>
+					  
+					  <ul id='dropdown1' class='card dropdown-content grey lighten-4 z-depth-0'>
+						<li><a href="#!" class='blue-text'>share</a></li>
+						<li><a href="#!" class='blue-text'>report</a></li>
+					  </ul>
+					</div>
+				  </div>
+				  
+				  <div class="row divider"></div>
+					
+					<div class="row center mb0 ">
+						<a class="waves-effect waves-light btn-large white blue-text z-depth-0"><i class="material-icons right">thumb_up</i>1k</a>
+						<a class="btn-floating waves-effect waves-light red z-depth-0 center-align"><i class="material-icons">forum</i></a>
+						<a class="waves-effect waves-light btn-large white blue-text z-depth-0"><i class="material-icons left">thumb_down</i>1.3k</a>
+					</div>
+					
+					
+				  
+				</div>
+			
+			</div>
+		  </div>
+		</div>
+		
+		<!-- Message Card Public Post with Image -->
+		<div class="row">
+			<div class="col s12 m12">
+			<div class="card white z-depth-0 waves-effect waves-light ">
+			
+			<div class="card-image">
+					  <img class="responsive-img" src="https://lorempixel.com/500/250/nature/6">
+					</div>
+					
+				<div class="card-content blue-grey-text text-darken-2">
+					
+					
+				  
+				  <div class="row">
+	
+						<p class="flow-text"> This is a normal public post. எண்ணிடலங்கா துகள்கள் எனது வேகத்தைக் குறைத்தன. பெரிய உயரமானவனாக தோன்ற வேண்டுமென்ற எனது நோக்கத்தால், நான் என்னை சுதாரித்துக்கொண்டேன்; அதைச் சொல்லியே ஆக வேண்டும். காரணம் எட்டு அடி உயரம் அது. அளவிலும் மிகப் பெரியது. இந்தத் தீர்மானத்திற்குப் பிறகு, எனது மெட்டீரியல்களை
+						வெற்றிகரமாகச் சேமித்து, அடுக்குவதில் சில மாதங்களைச் செலவிட்டேன், நான் தயார்.</p>
+					
+				  </div>
+				  
+				  
+				  <div class="row">
+				  
+					<div class="col">
+					  <img src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t1.0-1/p32x32/22814476_1440891822684373_7681172927818575830_n.jpg?oh=5fd0cbd42493591d249cfca392d40e4b&oe=5A74415A" alt="" class="circle responsive-img left px40"> <!-- notice the "circle" class -->
+					</div>
+					<div class="col">
+					  <span class="row blue-text">
+						paulwinjerome
+					  </span>
+					  <span class="row grey-text">
+						tuesday
+					  </span>
+					
+					</div>
+					<div class="col right">
+					  
+					  <a class="dropdown-button waves-effect waves-light white grey-text z-depth-0" data-activates="dropdown1" ><i class="material-icons small right">keyboard_arrow_up</i></a>
+					  
+					  <ul id='dropdown1' class='card dropdown-content grey lighten-4 z-depth-0'>
+						<li><a href="#!" class='blue-text'>share</a></li>
+						<li><a href="#!" class='blue-text'>report</a></li>
+					  </ul>
+					</div>
+				  </div>
+				  
+				  <div class="row divider"></div>
+					
+					<div class="row center mb0 ">
+						<a class="waves-effect waves-light btn-large white blue-text z-depth-0"><i class="material-icons right">thumb_up</i>1k</a>
+						<a class="btn-floating waves-effect waves-light red z-depth-0 center-align"><i class="material-icons">forum</i></a>
+						<a class="waves-effect waves-light btn-large white blue-text z-depth-0"><i class="material-icons left">thumb_down</i>1.3k</a>
+					</div>
+					
+					
+				  
+				</div>
+			
+			</div>
+		  </div>
+		</div>
+	
+		<!-- Message Card Reply -->
+		<div class="row">
+			<div class="col s12 m12">
+			<div class="card white z-depth-0">
+				<div class="card-content blue-grey-text text-darken-2">
+				  
+				  <div class="row">
+						
+						<span class="blue-text">
+						@shriramselva
+					  </span>
+						<p class="flow-text"> This is when you reply to a public post. I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. </p>
+					
+				  </div>
+				  <div class="row">
+					
+						<blockquote>
+							எண்ணிடலங்கா துகள்கள் எனது வேகத்தைக் குறைத்தன. பெரிய உயரமானவனாக தோன்ற வேண்டுமென்ற எனது நோக்கத்தால், நான் என்னை சுதாரித்துக்கொண்டேன்; அதைச் சொல்லியே ஆக வேண்டும். காரணம் எட்டு அடி உயரம் அது. அளவிலும் மிகப் பெரியது. I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+						</blockquote>
+					
+				  </div>
+				  
+				  
+				  <div class="row">
+				  
+					<div class="col">
+					  <img src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t1.0-1/p32x32/22814476_1440891822684373_7681172927818575830_n.jpg?oh=5fd0cbd42493591d249cfca392d40e4b&oe=5A74415A" alt="" class="circle responsive-img left px40"> <!-- notice the "circle" class -->
+					</div>
+					<div class="col">
+					  <span class="row blue-text">
+						paulwinjerome
+					  </span>
+					  <span class="row grey-text">
+						tuesday
+					  </span>
+					
+					</div>
+					<div class="col right">
+					  <a class="waves-effect waves-light white grey-text z-depth-0"><i class="material-icons small right">keyboard_arrow_up</i></a>
+					</div>
+				  </div>
+				  
+				  <div class="row divider"></div>
+					
+					<div class="row center mb0 ">
+						<a class="waves-effect waves-dark btn-large white blue-text z-depth-0"><i class="material-icons right">thumb_up</i>1k</a>
+						<a class="btn-floating waves-effect waves-light red z-depth-0"><i class="material-icons">forum</i></a>
+						<a class="waves-effect waves-dark btn-large white blue-text z-depth-0"><i class="material-icons left">thumb_down</i>1.3k</a>
+					</div>
+					
+					
+				  
+				</div>
+			
+			</div>
+		  </div>
+		</div>
+		
+		
+		<!-- Message Card Anonymus -->
+		<div class="row">
+			<div class="col s12 m12">
+			<div class="card blue-grey darken-3 z-depth-0">
+				<div class="card-content white-text">
+				  
+				  <div class="row">
+						<p class="flow-text"> This is an incognito post. I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. </p>
+					
+				  </div>
+				  
+				  
+				  <div class="row">
+					<div class="col">
+					  <span class="">
+						tuesday
+					  </span>
+					
+					</div>
+					<div class="col right">
+					  <a class="waves-effect waves-light white-text z-depth-0"><i class="material-icons small right">keyboard_arrow_up</i></a>
+					</div>
+				  </div>
+				  
+				  <div class="row divider blue-grey darken-2"></div>
+					
+					<div class="row center mb0 ">
+						<a class="waves-effect waves-dark btn-large blue-grey darken-3  white-text z-depth-0"><i class="material-icons right">thumb_up</i>1k</a>
+						<a class="btn-floating btn-small waves-effect waves-light grey z-depth-0"><i class="material-icons left">forum</i></a>
+						<a class="waves-effect waves-dark btn-large blue-grey darken-3  white-text z-depth-0"><i class="material-icons left">thumb_down</i>1.3k</a>
+					</div>
+					
+					
+				  
+				</div>
+			
+			</div>
+		  </div>
+		</div>
+		
+		
+		<!-- Message Card Anonymus Reply -->
+		<div class="row">
+			<div class="col s12 m12">
+			<div class="card blue-grey darken-3 z-depth-0">
+				<div class="card-content white-text">
+				  
+				  <div class="row">
+						<p class="flow-text"> This is when you reply to an incognito post. எண்ணிடலங்கா துகள்கள் எனது வேகத்தைக் குறைத்தன. பெரிய உயரமானவனாக தோன்ற வேண்டுமென்ற எனது நோக்கத்தால், நான் என்னை சுதாரித்துக்கொண்டேன்; அதைச் சொல்லியே ஆக வேண்டும். காரணம் எட்டு அடி உயரம் அது. அளவிலும் மிகப் பெரியது. இந்தத் தீர்மானத்திற்குப் பிறகு, எனது மெட்டீரியல்களை வெற்றிகரமாகச் சேமித்து, அடுக்குவதில் சில மாதங்களைச் செலவிட்டேன், நான் தயார். </p>
+					
+				  </div>
+				  
+				  <div class="row">
+					
+						<blockquote>
+							எண்ணிடலங்கா துகள்கள் எனது வேகத்தைக் குறைத்தன. பெரிய உயரமானவனாக தோன்ற வேண்டுமென்ற எனது நோக்கத்தால், நான் என்னை சுதாரித்துக்கொண்டேன்; அதைச் சொல்லியே ஆக வேண்டும். காரணம் எட்டு அடி உயரம் அது. அளவிலும் மிகப் பெரியது.little markup to use effectively.
+						</blockquote>
+					
+				  </div>
+				  
+				  
+				  <div class="row">
+					<div class="col">
+					  <span class="">
+						tuesday
+					  </span>
+					
+					</div>
+					<div class="col right">
+					  <a class="waves-effect waves-light white-text z-depth-0"><i class="material-icons small right">keyboard_arrow_up</i></a>
+					</div>
+				  </div>
+				  
+				  <div class="row divider blue-grey darken-2"></div>
+					
+					<div class="row center mb0 ">
+						<a class="waves-effect waves-dark btn-large blue-grey darken-3  white-text z-depth-0"><i class="material-icons right">thumb_up</i>1k</a>
+						<a class="btn-floating btn-small waves-effect waves-light grey z-depth-0"><i class="material-icons left">forum</i></a>
+						<a class="waves-effect waves-dark btn-large blue-grey darken-3  white-text z-depth-0"><i class="material-icons left">thumb_down</i>1.3k</a>
+					</div>
+					
+					
+				  
+				</div>
+			
+			</div>
+		  </div>
+		</div>
+		
+		
+	</div>
+	
+		<!-- FAB -->
+	
+		<div class="fixed-action-btn toolbar">
+			<a class="btn-floating blue btn-large red pulse">
+			  <i class="large material-icons">mode_edit</i>
+			</a>
+			<ul>
+			  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
+			  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
+			  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+			  <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+			</ul>
+		  </div>
+	
+	  
+	  
+	 <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+	  
+    </body>
+  </html>
